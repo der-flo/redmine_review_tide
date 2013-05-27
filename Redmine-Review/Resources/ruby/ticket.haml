@@ -1,0 +1,12 @@
+%article
+  %h2
+    %input{:type => 'checkbox', :id => "ticket_#{ticket.id}", :checked => true,
+           :data => {:lt => ticket.last_time.to_i}}
+    %a{:href => ticket.link}= ticket.title
+  - ticket.items.each do |item|
+    %section
+      %h3
+        %a{:href => item.link}= item.author
+        (#{item.time.strftime('%d.%m.%y, %k:%M')})
+      - if item.content?
+        .item_content= item.content

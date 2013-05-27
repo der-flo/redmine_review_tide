@@ -1,0 +1,21 @@
+#appname:Redmine-Review
+#appid:org.derflo.rrt
+#publisher:der_flo
+#image:default_app_logo.png
+#url:http://der-flo.org/
+#guid:37a23fd7-3bc9-49e6-9c1c-3c81db6e9d24
+#desc:No description provided
+#type:desktop
+runtime:1.3.1-beta
+app:1.3.1-beta
+codec:1.3.1-beta
+database:1.3.1-beta
+filesystem:1.3.1-beta
+media:1.3.1-beta
+monkey:1.3.1-beta
+network:1.3.1-beta
+platform:1.3.1-beta
+process:1.3.1-beta
+ui:1.3.1-beta
+worker:1.3.1-beta
+ruby:1.3.1-beta

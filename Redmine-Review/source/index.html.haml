@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %title Aktuelle Ticketänderungen
+    %link{href: 'stylesheets/application.css', rel: 'stylesheet'}
+  %body
+    .content
+      %h1 Aktuelle Ticketänderungen
+      %p#timestamp
+    %a#open_tickets{href: '#'} Alle bestätigen und markierte Tickets öffnen
+
+    %script{src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'}
+    %script{src: 'ruby/main.rb', type: 'text/ruby'}
+    %script{src: 'javascripts/application.js'}

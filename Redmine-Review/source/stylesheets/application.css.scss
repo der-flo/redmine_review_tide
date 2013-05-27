@@ -1,0 +1,95 @@
+@import "compass/css3";
+@import "compass/typography/links/link-colors";
+
+// TideSDK (Webkit) unterstützt noch keine Webfonts, nur SVG-Format
+
+$c1: #225378;  // dark blue
+$c2: #1695A3;  // light blue
+$c3: #ACF0F2;  // dirty white
+$c4: #F3FFE2;  // light dirty white
+$c5: #EB7F00;  // orange
+
+body {
+  background-color: $c1;
+  font-size: 12px;
+  font-family: Futura;
+}
+
+a {
+  @include link-colors($c5, $c5, $c5, $c5, $c5)
+}
+
+h1 {
+  font-family: 'American Typewriter';
+  color: $c3;
+  font-size: 3em;
+  text-shadow: 0 -1px 1px $c1, 0 1px 1px $c4;
+  text-align: center;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: Futura;
+}
+
+h2 {
+  font-size: 1.2em;
+  a {
+    @include link-colors($c1, $c5, $c1, $c1, $c1);
+    text-decoration: none;
+  }
+}
+h3 {
+  font-size: 1em;
+  font-weight: 100;
+}
+p {
+  font-size: 0.8em;
+}
+
+.content {
+  width: 800px;
+  margin: 1em auto 1em auto;
+  padding: 1em;
+  background-color: $c2;
+  color: $c1;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+article {
+  background-color: $c3;
+  padding: 1em;
+
+  &:nth-child(odd) {
+    background-color: $c3;
+  }
+  &:nth-child(even) {
+    background-color: $c4;
+  }
+
+  .item_content {
+    border: 1px dotted $c2;
+    padding: 0 0.5em;
+    margin: 0 2em;
+    font-size: 0.8em;
+  }
+}
+
+#open_tickets {
+  position: fixed;
+  //display: block;
+  left: 1em;
+  top: 5em;
+  width: 8em;
+  background-color: $c4;
+  padding: 1em;
+  border: 1px solid $c1;
+  @include border-radius(1em);
+  @include box-shadow($c4 0 0 2em);
+  text-align: center;
+  a {
+    font-weight: bold;
+  }
+}
