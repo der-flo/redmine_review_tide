@@ -54,8 +54,7 @@ class Application
   # EVENTS #####################################################################
   def wire_events
     query('#open_tickets').click(method(:on_open_tickets_click))
-    # TODO: Alle 5 min
-    @window.setInterval(method(:on_refresh_interval), 10 * 1_000)
+    @window.setInterval(method(:on_refresh_interval), 5 * 60 * 1_000)
   end
   def on_refresh_interval
     # Die Liste aktualisieren, wenn die checkboxen nicht abgehakt sind

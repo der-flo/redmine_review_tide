@@ -13,7 +13,6 @@ require 'haml'
 
 # TODO: Designoptimierungen
 # TODO: Tickets einklappen + ausklappbar
-# TODO: -> GitHub
 
 load '~/.rrt_config'
 
